@@ -10,8 +10,8 @@ const slides = [
     subtitle: 'Em Piracicaba/SP, transformamos sucata em futuro.',
   },
   {
-    imageDesktop: 'https://imgur.com/dLBbydW',
-    imageMobile: 'https://imgur.com/dLBbydW',
+    imageDesktop: 'https://imgur.com/dLBbydW.jpg',
+    imageMobile: 'https://imgur.com/dLBbydW.jpg',
     title: 'Soluções Completas em Reciclagem',
     subtitle: 'Gestão de resíduos com eficiência e responsabilidade.',
   },
