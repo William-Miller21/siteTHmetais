@@ -1,21 +1,36 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from './Icons';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onOpenHistoryModal: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onOpenHistoryModal }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
-    { name: 'Bazar', href: 'https://www.instagram.com/stories/highlights/18004707086661038/' },
+        { name: 'Bazar', href: 'https://www.instagram.com/stories/highlights/18004707086661038/' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Benefícios', href: '#beneficios' },
     { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'Parceiros', href: '#parceiros' },
     { name: 'Contato', href: '#contato' },
+    { name: 'Nossa História', href: '#nossa-historia' },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const href = e.currentTarget.getAttribute('href');
     
     if (!href) return;
+
+    // Handle modal trigger
+    if (href === '#nossa-historia') {
+      e.preventDefault();
+      onOpenHistoryModal();
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+      return;
+    }
 
     // Allow default browser behavior for external links
     if (href.startsWith('http')) {
