@@ -11,13 +11,13 @@ const slides = [
   },
   {
     imageDesktop: 'https://imgur.com/dLBbydW.jpg',
-    imageMobile: 'https://imgur.com/dLBbydW.jpg',
+    imageMobile: 'https://imgur.com/xBaUfht.jpg',
     title: 'Soluções Completas em Reciclagem',
     subtitle: 'Gestão de resíduos com eficiência e responsabilidade.',
   },
   {
     imageDesktop: 'https://i.imgur.com/7wkWwdM.png',
-    imageMobile: 'https://i.imgur.com/7wkWwdM.png',
+    imageMobile: 'https://imgur.com/vNMNCHc.jpg',
     title: 'Valorizamos Seus Resíduos',
     subtitle: 'Compramos e reciclamos diversos materiais.',
   },
