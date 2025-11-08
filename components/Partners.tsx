@@ -25,8 +25,6 @@ const Partners: React.FC = () => {
                   <p className="text-gray-400">A venda dos recicláveis gera recursos para a compra de alimentos, medicamentos e melhorias na infraestrutura da casa.</p>
                 </div>
               </div>
-              
-              </div>
             </div>
              <div className="bg-th-dark p-6 rounded-lg">
                 <h3 className="font-semibold text-lg text-white mb-2">✨ Como Participar e Transformar Vidas:</h3>
