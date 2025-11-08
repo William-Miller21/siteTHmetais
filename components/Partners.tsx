@@ -25,12 +25,7 @@ const Partners: React.FC = () => {
                   <p className="text-gray-400">A venda dos recicláveis gera recursos para a compra de alimentos, medicamentos e melhorias na infraestrutura da casa.</p>
                 </div>
               </div>
-              <div className="flex items-start">
-                <CheckCircleIcon className="h-6 w-6 text-th-green-light flex-shrink-0 mt-1 mr-3" />
-                <div>
-                  <h3 className="font-semibold text-lg text-white">Oficinas Terapêuticas</h3>
-                  <p className="text-gray-400">O material é usado em oficinas de artesanato e atividades lúdicas, promovendo socialização e estimulando a mente dos idosos.</p>
-                </div>
+              
               </div>
             </div>
              <div className="bg-th-dark p-6 rounded-lg">
