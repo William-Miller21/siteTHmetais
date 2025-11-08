@@ -40,6 +40,7 @@ const App: React.FC = () => {
       <Footer 
         onOpenPrivacyModal={() => setIsPrivacyModalOpen(true)}
         onOpenTermsModal={() => setIsTermsModalOpen(true)}
+        onOpenHistoryModal={() => setIsHistoryModalOpen(true)}
       />
       <WhatsAppButton />
       <PrivacyPolicyModal 
