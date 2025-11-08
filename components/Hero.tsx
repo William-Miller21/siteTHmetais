@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
 const slides = [
   {
     imageDesktop: 'https://i.imgur.com/hH3uDP4.png',
-    imageMobile: 'https://i.imgur.com/hH3uDP4.png',
+    imageMobile: 'https://www.pexels.com/pt-br/foto/28440177/',
     title: 'Coleta no seu Domicílio ou Empresa',
     subtitle: 'Em Piracicaba/SP, transformamos sucata em futuro.',
   },
