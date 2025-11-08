@@ -4,9 +4,10 @@ import { MailIcon, PhoneIcon, LocationMarkerIcon, InstagramIcon, FacebookIcon } 
 interface FooterProps {
   onOpenPrivacyModal: () => void;
   onOpenTermsModal: () => void;
+  onOpenHistoryModal: () => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal }) => {
+const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal, onOpenHistoryModal }) => {
   const addressUrl = "https://www.google.com/maps/search/?api=1&query=R.+Angelino+Stella,+470+-+Gleba+Califórnia,+Piracicaba+-+SP,+13403-291";
   const instagramUrl = "https://www.instagram.com/thmetais_/";
   const facebookUrl = "https://www.facebook.com/profile.php?id=61564496177282";
@@ -81,6 +82,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal })
               <li><a href="#depoimentos" onClick={handleNavClick} className="hover:text-white">Depoimentos</a></li>
               <li><a href="#parceiros" onClick={handleNavClick} className="hover:text-white">Parceiros</a></li>
               <li><a href="https://www.instagram.com/stories/highlights/18004707086661038/" target="_blank" rel="noopener noreferrer" className="hover:text-white">Bazar</a></li>
+              <li><button onClick={onOpenHistoryModal} className="hover:text-white text-left">Nossa História</button></li>
               <li><button onClick={onOpenTermsModal} className="hover:text-white text-left">Termos de Uso</button></li>
               <li><button onClick={onOpenPrivacyModal} className="hover:text-white text-left">Política de Privacidade</button></li>
             </ul>
