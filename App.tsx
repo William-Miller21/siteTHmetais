@@ -10,23 +10,25 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import PrivacyPolicyModal from './components/PrivacyPolicyModal';
 import TermsOfUseModal from './components/TermsOfUseModal';
+import OurHistoryModal from './components/OurHistoryModal';
 
 const App: React.FC = () => {
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
+  const [isHistoryModalOpen, setIsHistoryModalOpen] = useState(false);
 
   // Effect to prevent background scrolling when modal is open
   useEffect(() => {
-    if (isPrivacyModalOpen || isTermsModalOpen) {
+    if (isPrivacyModalOpen || isTermsModalOpen || isHistoryModalOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
-  }, [isPrivacyModalOpen, isTermsModalOpen]);
+  }, [isPrivacyModalOpen, isTermsModalOpen, isHistoryModalOpen]);
 
   return (
     <div className="bg-th-dark font-sans">
-      <Header />
+      <Header onOpenHistoryModal={() => setIsHistoryModalOpen(true)} />
       <main>
         <Hero />
         <Solutions />
@@ -47,6 +49,10 @@ const App: React.FC = () => {
       <TermsOfUseModal
         isOpen={isTermsModalOpen}
         onClose={() => setIsTermsModalOpen(false)}
+      />
+      <OurHistoryModal
+        isOpen={isHistoryModalOpen}
+        onClose={() => setIsHistoryModalOpen(false)}
       />
     </div>
   );
