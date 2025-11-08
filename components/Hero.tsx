@@ -4,19 +4,19 @@ import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
 
 const slides = [
   {
-    imageDesktop: 'https://i.imgur.com/hH3uDP4.png',
+    imageDesktop: 'https://imgur.com/UUpLEe3.jpg',
     imageMobile: 'https://imgur.com/UUpLEe3.jpg',
     title: 'Coleta no seu Domicílio ou Empresa',
     subtitle: 'Em Piracicaba/SP, transformamos sucata em futuro.',
   },
   {
-    imageDesktop: 'https://imgur.com/dLBbydW.jpg',
+    imageDesktop: 'https://imgur.com/xBaUfht.jpg',
     imageMobile: 'https://imgur.com/xBaUfht.jpg',
     title: 'Soluções Completas em Reciclagem',
     subtitle: 'Gestão de resíduos com eficiência e responsabilidade.',
   },
   {
-    imageDesktop: 'https://i.imgur.com/7wkWwdM.png',
+    imageDesktop: 'https://imgur.com/vNMNCHc.jpg',
     imageMobile: 'https://imgur.com/vNMNCHc.jpg',
     title: 'Valorizamos Seus Resíduos',
     subtitle: 'Compramos e reciclamos diversos materiais.',
